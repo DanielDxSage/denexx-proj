@@ -1,0 +1,43 @@
+.footer {
+  grid-column: full-start / full-end;
+  background-color: $color-main;
+  
+
+  &__wrap{
+    margin: 5rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--img {
+      margin-left: 5rem;
+
+      @include respond(phone) {
+        margin-left: 16rem;
+      }
+    }
+
+    @include respond(phone) {
+      margin: 5rem 8rem;
+      display: grid;
+      grid-row-gap: 3rem;
+    }
+  }
+}
+
+.copyright {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-sub;
+  margin-right: 4rem;
+  margin-top: 15rem;
+
+  span {
+    color: $color-sub-1;
+  }
+
+  @include respond(phone) {
+    margin-left: 13rem;
+    margin-top: 0rem;
+  }
+}

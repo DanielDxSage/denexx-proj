@@ -1,0 +1,144 @@
+.story__wrap {
+  // display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // grid-column: 2 /5;
+}
+
+.story__box {
+  background-color: $color-sub;
+  margin: 10rem;
+  padding: 5rem;
+  border-radius: 3rem;
+
+  @include respond(tab-port) {
+    width: 86%;
+    margin-left: 4.2rem;
+    padding: 4rem;
+    // padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+}
+
+
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.61);
+  border-radius: 3rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.315);
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+  position: relative;
+  // margin: 4rem;
+  // display: grid;
+  // justify-content: space-between;
+  // grid-column: 3 / 5;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    // background-color: yellow;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    // clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+
+    // width: 43rem;
+    // height: 20rem;
+    // background-color: $color-main;
+    // border-radius: 2rem;
+    // float: left;
+    // shape-outside: circle(50% at 50% 50%);
+    // clip-path: circle(50% at 50% 50%);
+    // transform: translateX(-3rem) skewX(12deg);
+  }
+
+  &__text {
+    transform: skewX(12deg);
+    margin-left: 23rem;
+
+    @include respond(phone) {
+      transform: skewX(0);
+      margin-left: 15rem;
+      margin-top: 3rem;
+      width: 20rem;
+    }
+
+  // margin-left: 10rem;
+  // transform: skewX(-9deg);
+
+  // @include respond(phone) {
+  //   transform: skewX(0);
+  // }
+}
+
+
+  &__caption {
+    position: absolute;
+    top: 47%;
+    left: 75%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    color: $color-prime;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .8s;
+    backface-visibility: hidden;
+
+    &:hover {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__img {
+    height: 100%;
+    transform: scale(1.2);
+    transition: all .5s;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+    @include respond(phone) {
+      margin-top: 8rem;
+      margin-left: 0rem;
+    }
+
+    // width: 77%;
+    // transform: scale(1.2);
+    // transition: all .5s;
+    // border-radius: 2rem 1rem;
+    // margin-left: 3rem;
+
+    &:hover {
+      transform: scale(1);
+      filter: blur(3px) brightness(80%);
+    }
+  }
+
+  
+}
+

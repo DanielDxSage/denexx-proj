@@ -1,0 +1,9 @@
+.section__story {
+  grid-column: full-start / full-end;
+  position: relative;
+  // padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
