@@ -5,7 +5,6 @@
 // }
 
 
-
 .head {
   height: 63vh;
   // margin: 10rem;
@@ -13,15 +12,33 @@
   background-size: cover; 
   background-position: top;
 
+  &__bg {
+    background-color: rgba($color-sub, .7);
+    width: 67rem;
+    height: 23rem;
+    position: absolute;
+    top: 9.4rem;
+    border-radius: 1rem;
+    margin-left: 30rem;
+
+    @include respond(phone) {
+      width: 49rem;
+      height: 15rem;
+      position: absolute;
+      top: 8.4rem;
+      right: 5rem;
+    }
+  }
+
   &__text {
-    padding: 15rem;
+    padding: 7rem;
     text-align: center;
     color: $color-sub-1;
     font-size: 2.5rem;
     font-weight: 500;
 
     @include respond(phone) {
-      padding: 7rem;
+      padding: 4rem;
     }
   }
 }
@@ -212,4 +229,10 @@
 .paragraph-p {
   font-size: 2rem;
   font-weight: 400;
+}
+
+.footer__wrap {
+  margin: 0rem;
+  padding: 3rem;
+  margin-left: 7rem;
 }

@@ -2,7 +2,7 @@
   position: relative;
   grid-column: full-start / full-end;
   background-color: #182628;
-  z-index: 1;
+  z-index: 99;
   overflow: hidden; }
   .header .social {
     position: fixed;
@@ -868,6 +868,13 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.social {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-self: center; }
+
 .section__story {
   grid-column: full-start / full-end;
   position: relative; }
@@ -880,15 +887,30 @@ body {
   background-image: url(../img/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg);
   background-size: cover;
   background-position: top; }
+  .head__bg {
+    background-color: rgba(128, 128, 128, 0.7);
+    width: 67rem;
+    height: 23rem;
+    position: absolute;
+    top: 9.4rem;
+    border-radius: 1rem;
+    margin-left: 30rem; }
+    @media (max-width: 37.5em) {
+      .head__bg {
+        width: 49rem;
+        height: 15rem;
+        position: absolute;
+        top: 8.4rem;
+        right: 5rem; } }
   .head__text {
-    padding: 15rem;
+    padding: 7rem;
     text-align: center;
     color: #D3D3D3;
     font-size: 2.5rem;
     font-weight: 500; }
     @media (max-width: 37.5em) {
       .head__text {
-        padding: 7rem; } }
+        padding: 4rem; } }
 
 .header-contact {
   color: #D3D3D3;
@@ -1014,3 +1036,8 @@ body {
 .paragraph-p {
   font-size: 2rem;
   font-weight: 400; }
+
+.footer__wrap {
+  margin: 0rem;
+  padding: 3rem;
+  margin-left: 7rem; }
