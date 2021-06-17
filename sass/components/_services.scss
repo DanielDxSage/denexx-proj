@@ -73,7 +73,7 @@
   }
 
   @include respond(phone) {
-    margin: 2.5rem;
+    // margin: 2.5rem;
   }
 
   &--main {
@@ -98,12 +98,14 @@
     }
 
     @include respond(phone) {
-      line-height: 1;
+      line-height: 3;
+      margin: -1rem;
+
       &::after {
         content: "";
         position: absolute;
-        left: 9%;
-        top: 6rem;
+        left: 1.2rem;
+        top: 5rem;
         width: 5%;
         border-bottom: 3px solid $color-prime;
       }

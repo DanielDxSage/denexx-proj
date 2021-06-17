@@ -21,6 +21,7 @@
 
   @include respond(phone) {
     transform: skewX(0);
+    margin-left: 6rem;
   }
 }
 
@@ -28,7 +29,7 @@
 
 .story {
   width: 75%;
-  margin: 0 auto;
+  margin: 4rem auto;
   background-color: rgba(255, 255, 255, 0.61);
   border-radius: 3rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.315);
@@ -37,10 +38,6 @@
   font-size: 1.6rem;
   transform: skewX(-12deg);
   position: relative;
-  // margin: 4rem;
-  // display: grid;
-  // justify-content: space-between;
-  // grid-column: 3 / 5;
 
   @include respond(tab-port) {
     width: 100%;
@@ -61,18 +58,14 @@
     // clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
 
-    @include respond(phone) {
-      transform: translateX(-3rem) skewX(0);
+    @include respond(tab-port) {
+      margin: -1rem 1rem;
     }
 
-    // width: 43rem;
-    // height: 20rem;
-    // background-color: $color-main;
-    // border-radius: 2rem;
-    // float: left;
-    // shape-outside: circle(50% at 50% 50%);
-    // clip-path: circle(50% at 50% 50%);
-    // transform: translateX(-3rem) skewX(12deg);
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+      margin: -6rem 4rem;
+    }
   }
 
   &__text {
@@ -81,19 +74,9 @@
 
     @include respond(phone) {
       transform: skewX(0);
-      margin-left: 15rem;
-      margin-top: 3rem;
-      width: 20rem;
+      width: 31rem;
     }
-
-  // margin-left: 10rem;
-  // transform: skewX(-9deg);
-
-  // @include respond(phone) {
-  //   transform: skewX(0);
-  // }
-}
-
+  }  
 
   &__caption {
     position: absolute;
@@ -108,10 +91,12 @@
     transition: all .8s;
     backface-visibility: hidden;
 
-    &:hover {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
+    
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 
   &__img {
@@ -120,7 +105,7 @@
     transition: all .5s;
     margin-left: 4rem;
     margin-top: 1rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
 
     @include respond(phone) {
       margin-top: 8rem;
@@ -133,12 +118,11 @@
     // border-radius: 2rem 1rem;
     // margin-left: 3rem;
 
-    &:hover {
-      transform: scale(1);
-      filter: blur(3px) brightness(80%);
-    }
   }
 
-  
+  &:hover &__img {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+  }
 }
 
