@@ -497,7 +497,10 @@ body {
   position: relative; }
   @media (max-width: 56.25em) {
     .service__text {
-      margin: 9rem; } }
+      margin: 10rem; } }
+  @media (max-width: 37.5em) {
+    .service__text {
+      margin: 8.5rem; } }
   .service__text--main::after {
     content: "";
     position: absolute;
@@ -682,9 +685,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media (max-width: 37.5em) {
-      .contact__wrap {
-        flex-direction: column; } }
     .contact__wrap--text-main {
       font-size: 3.5rem;
       color: #182628;

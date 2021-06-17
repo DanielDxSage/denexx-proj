@@ -13,9 +13,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @include respond(phone) {
-      flex-direction: column;
-    }
+    // @include respond(phone) {
+    //   flex-direction: column;
+    // }
 
     &--text {
 
@@ -30,24 +30,6 @@
         color: $color-main;
       }
     }
-
-    // &--button {
-    //   // display: flex;
-    //   // justify-content: flex-end;
-    //   margin-left: 30rem;
-
-    //   @include respond(tab-land) {
-    //     // margin-left: 14rem;
-    //   }
-
-    //   @include respond(tab-port) {
-    //     // margin-right: -5rem;
-    //   }
-
-    //   @include respond(phone) {
-    //     // margin-left: -5rem;
-    //   }
-    // }
   }
 
   &__link {

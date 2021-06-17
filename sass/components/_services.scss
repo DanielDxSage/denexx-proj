@@ -69,11 +69,11 @@
   position: relative;
 
   @include respond(tab-port) {
-    margin: 9rem;
+    margin: 10rem;
   }
 
   @include respond(phone) {
-    // margin: 2.5rem;
+    margin: 8.5rem;
   }
 
   &--main {
