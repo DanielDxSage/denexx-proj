@@ -91,7 +91,10 @@
     transition: all .8s;
     backface-visibility: hidden;
 
-    
+    @include respond(phone-sm) {
+      top: 99%;
+      left: 57%;
+    }
   }
 
   &:hover &__caption {

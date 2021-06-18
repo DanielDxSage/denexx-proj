@@ -76,6 +76,10 @@
     margin: 8.5rem;
   }
 
+  @include respond(phone-sm) {
+    margin: 8.5rem 0 0 8rem;
+  }
+
   &--main {
     &::after {
       content: "";
@@ -104,11 +108,15 @@
       &::after {
         content: "";
         position: absolute;
-        left: 1.2rem;
+        left: 5.2rem;
         top: 5rem;
         width: 5%;
         border-bottom: 3px solid $color-prime;
       }
+    }
+
+    @include respond(phone-sm) {
+      margin: -1rem -5rem 1rem;
     }
   }
 
@@ -117,5 +125,8 @@
     font-size: 1.5rem;
     letter-spacing: 1px;
 
+    @include respond(phone-sm) {
+      padding: 0.7rem 0 0 3rem;
+    }
   }
 }

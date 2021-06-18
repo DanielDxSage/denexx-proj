@@ -8,20 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &--img {
-      margin-left: 5rem;
-
-      @include respond(phone) {
-        margin-left: 16rem;
-      }
-    }
-
-    @include respond(phone) {
-      margin: 5rem 8rem;
-      display: grid;
-      grid-row-gap: 3rem;
-    }
   }
 }
 
@@ -37,7 +23,6 @@
   }
 
   @include respond(phone) {
-    margin-left: 13rem;
-    margin-top: 0rem;
+    align-self: flex-end;
   }
 }
