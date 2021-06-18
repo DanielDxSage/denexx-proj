@@ -522,13 +522,13 @@ body {
       .service__text--main::after {
         content: "";
         position: absolute;
-        left: 9.2rem;
+        left: 5.2rem;
         top: 5rem;
         width: 5%;
         border-bottom: 3px solid #FFA500; } }
   @media (max-width: 31.25em) {
     .service__text--main {
-      margin: -1rem -5rem 1rem; } }
+      margin-left: -9rem; } }
   .service__text--sub {
     padding: .7rem;
     font-size: 1.5rem;
