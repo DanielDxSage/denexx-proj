@@ -43,6 +43,8 @@
         @include respond(phone) {
           transform: translate(80px, 0);
         }
+
+        
       }
 
       &:nth-child(1) i {
