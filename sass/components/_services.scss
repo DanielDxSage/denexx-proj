@@ -127,6 +127,7 @@
 
     @include respond(phone-sm) {
       padding: 0.7rem 0 0 3rem;
+      letter-spacing: 0;
     }
   }
 }

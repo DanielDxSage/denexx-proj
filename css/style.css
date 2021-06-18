@@ -534,7 +534,8 @@ body {
     letter-spacing: 1px; }
     @media (max-width: 31.25em) {
       .service__text--sub {
-        padding: 0.7rem 0 0 3rem; } }
+        padding: 0.7rem 0 0 3rem;
+        letter-spacing: 0; } }
 
 .portfolio {
   grid-column: full-start / full-end;
