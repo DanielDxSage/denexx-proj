@@ -100,7 +100,7 @@
       position: fixed;
       top: 2.5rem;
       right: 2.5rem;
-      background-image: radial-gradient(rgb(0, 0, 0),yellow);
+      background: $color-main;
       z-index: 1000;
       transition: transform .8s cubic-bezier(0.76, 0, 0.24, 1);
 

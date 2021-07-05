@@ -14,36 +14,31 @@
 
   @include respond(phone) {
     margin-top: -9rem;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 
 .service__box{
   background-color: $color-main;
   padding: 1.5rem;
-  border-radius: 2.5rem .7rem;
+  border-radius: 2.5rem 0rem;
   box-shadow: 0 2.5rem 3rem rgba(255, 255, 255, 0.671);
   transition: transform .3s;
 
-  // &--img {
-  //   background-color: $color-sub;
-  //   padding: 1rem;
-  //   margin-bottom: 1rem;
-  //   border-radius: 1rem;
-  //   border: 2px solid $color-sub-1;
-
-
-  // }
-
   &--text {
     background-color: $color-prime;
-    margin: 2rem;
-    margin-bottom: .4rem;
-    padding: 1rem;
-    border-radius: 2rem .6rem;
+    margin: 1rem 1rem 1rem;
+    // margin-bottom: .4rem;
+    padding: 1.5rem;
+    border-radius: 2rem 0rem;
     color: $color-main;
     font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
+
+    @include respond(phone) {
+      margin: 1rem 8rem 4rem;
+    }
   }
 
   &:hover {

@@ -35,16 +35,12 @@
       transition: 1s;
       transition-property: transform;
 
-      
-
       &:hover {
         transform: translate(140px, 0);
 
         @include respond(phone) {
           transform: translate(80px, 0);
         }
-
-        
       }
 
       &:nth-child(1) i {

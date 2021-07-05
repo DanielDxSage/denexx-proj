@@ -3,10 +3,74 @@
 //   font-weight: 300;
 //   line-height: 1.6;
 // }
+.social {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  transform: translate(-245px, 0);
+
+  @include respond(tab-land) {
+    transform: translate(-223px, 0);
+  }
+  @include respond(tab-port) {
+    transform: translate(-199px, 0);
+  }
+  @include respond(phone) {
+    transform: translate(-120px, 0);
+  }
+
+  &__a {
+    // display: flex;
+    color: $color-prime;
+    background-color: rgba($color-sub, 0.5);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 1rem 2rem;
+    width: 30rem;
+    align-items: center;
+    text-align: right;
+    border-radius: 5rem;
+    transition: 1s;
+    transition-property: transform;
+
+    &:hover {
+      transform: translate(140px, 0);
+
+      @include respond(phone) {
+        transform: translate(80px, 0);
+      } 
+    }
+
+    &:nth-child(1) i {
+      color: rgba(64, 64, 247, 0.979);
+    }
+    &:nth-child(2) i {
+      color: rgb(114, 114, 247);
+    }
+    &:nth-child(3) i {
+      color: transparent;
+      background-image: linear-gradient(45deg, #ffdf9e, #e56969, #8a49a1);
+      -webkit-background-clip: text;
+    }
+  }
+
+}
+
+.social i {
+  margin-left: 1rem;
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+}
 
 
 .head {
-  height: 63vh;
+  grid-column: full-start / full-end;
   // margin: 10rem;
   background-image: url(../img/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg);
   background-size: cover; 
@@ -18,15 +82,30 @@
     height: 23rem;
     position: absolute;
     top: 9.4rem;
+    left: 30rem;
     border-radius: 1rem;
-    margin-left: 30rem;
 
-    @include respond(phone) {
-      width: 49rem;
+    @include respond(tab-land) {
+      top: 18rem;
+      left: 32rem;
+    }
+
+    @include respond(tab-port) {
+      top: 20rem;
+      left: 23rem;
+    }
+
+    @include respond(mobile-l) {
+      width: 65rem;
       height: 15rem;
-      position: absolute;
-      top: 8.4rem;
-      right: 5rem;
+      top: 19rem;
+      left: 11rem;
+    }
+
+    @include respond(mobile-m) {
+      width: 50rem;
+      height: 15rem;
+      left: 14.5rem;
     }
   }
 
@@ -49,8 +128,9 @@
 }
 
 .contactpg {
-  padding: 7em 0;
+  padding: 7rem 0;
   background-color: $color-sub-1;
+  grid-column: full-start / full-end;
 
 
   &__container {
@@ -63,7 +143,7 @@
     box-shadow: 0 2rem 4rem rgba($color-main, .8);
 
     @include respond(phone) {
-      height: 100rem;
+      height: 148rem;
     }
   }
 
@@ -80,9 +160,19 @@
   &__formbox {
     order: 2;
 
+    @include respond(mobile-l) {
+      order: 0;
+    }
+
     &--contentwrap {
       padding: 3rem !important;
       width: 100% !important;
+      margin: -2rem -3rem;
+
+      @include respond(mobile-l) {
+        margin: 0;
+        padding: 3rem 8rem !important;
+      }
     }
   }
 
@@ -112,11 +202,16 @@
   &__desc {
     background-color: gray;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 1rem 6rem 1rem 1rem;
+
+    @include respond(mobile-l) {
+      margin: 8rem 2rem 0 2rem;
+    }
   }
 
   &__infowrap {
-    padding: 3rem !important;  
+    padding: 0rem 7rem !important;
+    margin-bottom: 5rem;
   }
 
   &__infowrap{
@@ -168,6 +263,10 @@
     margin-right: -15px;
     margin-left: -15px;
 
+    @include respond(mobile-l) {
+      display: block;
+    }
+
     &-item1 {
       flex: 0 0 50%;
       max-width: 50%;
@@ -184,11 +283,19 @@
       .label {
         color: $color-sub-1;
         text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 300;
+        font-size: 1.7rem;
+        font-weight: 500;
 
         display: inline-block;
         margin-bottom: 0.5rem;
+      }
+
+      .form-control-1 {
+        width: 90%;
+
+        @include respond(mobile-l) {
+          width: 200%;
+        }
       }
 
       .form-control {
@@ -197,10 +304,23 @@
         border-bottom: 1px solid $color-sub;
         padding: 0;
         font-size: 1.5rem;
+        // width: 100%;
 
         height: 3.6rem;
         background-color: $color-main;
         color: $color-sub-1;
+
+        &::-webkit-input-placeholder {
+          color: $color-sub-1;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+          font-weight: 200;
+          font-family: $font-primary;
+        }
+
+        &:focus, &:active {
+          border-color: $color-sub-1;
+        }
       }
     }
 
@@ -208,12 +328,20 @@
       background-color: $color-sub;
       color: $color-sub-1;
       margin-top: 1.5rem;
+
+      @include respond(mobile-l) {
+        margin-top: 5.5rem;
+      }
     }
   }
 
   .row {
     display: grid;
   }
+}
+
+textarea.form-control {
+	height: 6rem !important;
 }
 
 .d-flex {
@@ -231,8 +359,12 @@
   font-weight: 400;
 }
 
-.footer__wrap {
+.footer {
+  grid-column: full-start / full-end;
+  
+  &__wrap {
   margin: 0rem;
   padding: 3rem;
   margin-left: 7rem;
+  }
 }

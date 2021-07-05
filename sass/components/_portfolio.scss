@@ -1,7 +1,7 @@
 .portfolio {
   grid-column: full-start / full-end;
   background-color: $color-main;
-  margin-top: 50rem;
+  margin-top: 3rem;
 
   @include respond(tab-port) {
     margin-top: 10rem;

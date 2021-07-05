@@ -5,10 +5,14 @@
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
+  @include respond(mobile-l) {
+    margin-bottom: 16rem;
+  }
+
   &--main {
     display: block;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 500;
     letter-spacing: 3rem;
     padding: 4rem;
 
