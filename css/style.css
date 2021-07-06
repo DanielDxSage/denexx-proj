@@ -20,7 +20,8 @@
         transform: translate(-200px, 0); } }
     @media (max-width: 37.5em) {
       .header .social {
-        transform: translate(-120px, 0); } }
+        transform: translate(-120px, 0);
+        margin-top: 41rem; } }
     .header .social__a {
       color: #FFA500;
       background-color: rgba(128, 128, 128, 0.5);
