@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translate(-245px, 0); }
+    transform: translate(-245px, 0);
+    z-index: 100; }
     @media (max-width: 75em) {
       .header .social {
         transform: translate(-220px, 0); } }
@@ -125,7 +126,8 @@
   .navigation__checkbox {
     display: none; }
   .navigation__logo-box {
-    position: fixed; }
+    position: fixed;
+    z-index: 100; }
   .navigation__logo {
     width: 4.5rem;
     height: 6.5rem;
