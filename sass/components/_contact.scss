@@ -13,9 +13,9 @@
     justify-content: space-between;
     align-items: center;
 
-    // @include respond(phone) {
-    //   flex-direction: column;
-    // }
+    @include respond(mobile-l) {
+      flex-direction: column;
+    }
 
     &--text {
 
@@ -23,6 +23,11 @@
         font-size: 3.5rem;
         color: $color-main;
         font-weight: 500;
+
+        @include respond(mobile-l) {
+          display: flex;
+          justify-content: center;
+        }
       }
 
       &-sub {
@@ -32,6 +37,12 @@
         @include respond(mobile-l) {
           font-size: 2rem;
         }
+      }
+    }
+
+    &--button {
+      @include respond(mobile-l) {
+        margin-top: 6rem;
       }
     }
   }
@@ -48,6 +59,10 @@
 
       @include respond(tab-port) {
         margin-left: -9rem;
+      }
+
+      @include respond(mobile-l) {
+        margin-left: 0rem;
       }
     }
 

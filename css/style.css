@@ -738,16 +738,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 26.5em) {
+      .contact__wrap {
+        flex-direction: column; } }
     .contact__wrap--text-main {
       font-size: 3.5rem;
       color: #000000;
       font-weight: 500; }
+      @media (max-width: 26.5em) {
+        .contact__wrap--text-main {
+          display: flex;
+          justify-content: center; } }
     .contact__wrap--text-sub {
       font-size: 1.5rem;
       color: #000000; }
       @media (max-width: 26.5em) {
         .contact__wrap--text-sub {
           font-size: 2rem; } }
+    @media (max-width: 26.5em) {
+      .contact__wrap--button {
+        margin-top: 6rem; } }
   .contact__link:link, .contact__link:visited {
     transition: all 0.3s;
     font-size: 2rem;
@@ -758,6 +768,9 @@ body {
     @media (max-width: 56.25em) {
       .contact__link:link, .contact__link:visited {
         margin-left: -9rem; } }
+    @media (max-width: 26.5em) {
+      .contact__link:link, .contact__link:visited {
+        margin-left: 0rem; } }
   .contact__link--last {
     padding: 9px 25px;
     background-color: transparent;
