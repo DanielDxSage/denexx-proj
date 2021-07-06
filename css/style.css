@@ -9,7 +9,14 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     transform: translate(-245px, 0); }
+    @media (max-width: 75em) {
+      .header .social {
+        transform: translate(-220px, 0); } }
+    @media (max-width: 56.25em) {
+      .header .social {
+        transform: translate(-200px, 0); } }
     @media (max-width: 37.5em) {
       .header .social {
         transform: translate(-120px, 0); } }
@@ -95,22 +102,20 @@
   grid-column: full-start / full-end;
   background-color: #000000; }
   .footer__wrap {
-    margin: 5rem 8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    margin: 3rem; }
 
 .copyright {
   font-size: 2rem;
   font-weight: 500;
   color: #808080;
   display: flex;
-  align-self: flex-end; }
+  justify-content: center;
+  align-items: center; }
+  .copyright__span {
+    font-size: 2.8rem;
+    margin: 1.1rem .5rem 0 0; }
   .copyright span {
     color: #D3D3D3; }
-  @media (max-width: 37.5em) {
-    .copyright {
-      align-self: flex-end; } }
 
 .navigation {
   display: flex;
@@ -119,6 +124,8 @@
   padding: 1.5rem 10%; }
   .navigation__checkbox {
     display: none; }
+  .navigation__logo-box {
+    position: fixed; }
   .navigation__logo {
     width: 4.5rem;
     height: 6.5rem;
@@ -459,6 +466,9 @@ body {
   font-size: 2rem;
   font-style: italic;
   margin-bottom: 4rem; }
+  @media (max-width: 26.5em) {
+    .about__text {
+      font-size: 2.5rem; } }
 
 .services {
   grid-column: center-start / center-end;
@@ -534,14 +544,25 @@ body {
       top: 5rem;
       width: 5%;
       border-bottom: 3px solid #FFA500; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 26.5em) {
     .service__text--main {
       line-height: 3;
       margin: -1rem; }
       .service__text--main::after {
         content: "";
         position: absolute;
-        left: 7rem;
+        left: 3rem;
+        top: 5rem;
+        width: 5%;
+        border-bottom: 3px solid #FFA500; } }
+  @media (max-width: 23.75em) {
+    .service__text--main {
+      line-height: 3;
+      margin: -1rem; }
+      .service__text--main::after {
+        content: "";
+        position: absolute;
+        left: 0rem;
         top: 5rem;
         width: 5%;
         border-bottom: 3px solid #FFA500; } }
@@ -554,13 +575,17 @@ body {
     letter-spacing: 1px; }
     @media (max-width: 31.25em) {
       .service__text--sub {
-        padding: 0.7rem 0 0 3rem;
+        font-size: 2rem;
+        padding: 0.4rem 0 0 3rem;
         letter-spacing: 0; } }
 
 .portfolio {
   grid-column: full-start / full-end;
   background-color: #000000;
   margin-top: 3rem; }
+  @media (max-width: 75em) {
+    .portfolio {
+      margin-top: 15rem; } }
   @media (max-width: 56.25em) {
     .portfolio {
       margin-top: 10rem; } }
@@ -578,7 +603,7 @@ body {
     background-color: #FFA500;
     margin: 7rem;
     padding: 3rem;
-    border-radius: 2.5rem .7rem;
+    border-radius: 2.5rem 0rem;
     transition: transform .3s; }
     .portfolio__box--item {
       margin: 2rem;
@@ -596,8 +621,8 @@ body {
           font-size: 2.5rem; } }
     .portfolio__box--img {
       width: 50%;
-      border: 1.5rem solid #808080;
-      border-radius: 3rem .7rem;
+      border: 1rem solid #808080;
+      border-radius: 3rem 0rem;
       transition: all .3s; }
       @media (max-width: 56.25em) {
         .portfolio__box--img {
@@ -605,7 +630,7 @@ body {
           width: 60%;
           border: 0.5rem solid #808080; } }
       .portfolio__box--img:hover {
-        transform: scale(1.05) translateY(-0.5rem);
+        transform: scale(1.08) translateY(-0.5rem);
         box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.6); }
 
 .story__wrap {
@@ -720,6 +745,9 @@ body {
     .contact__wrap--text-sub {
       font-size: 1.5rem;
       color: #000000; }
+      @media (max-width: 26.5em) {
+        .contact__wrap--text-sub {
+          font-size: 2rem; } }
   .contact__link:link, .contact__link:visited {
     transition: all 0.3s;
     font-size: 2rem;
@@ -1151,10 +1179,3 @@ textarea.form-control {
 .paragraph-p {
   font-size: 2rem;
   font-weight: 400; }
-
-.footer {
-  grid-column: full-start / full-end; }
-  .footer__wrap {
-    margin: 0rem;
-    padding: 3rem;
-    margin-left: 7rem; }

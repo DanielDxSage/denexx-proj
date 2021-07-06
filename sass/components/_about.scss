@@ -50,5 +50,9 @@
     font-size: 2rem;
     font-style: italic;
     margin-bottom: 4rem;
+
+    @include respond(mobile-l) {
+      font-size: 2.5rem;
+    }
   }
 }

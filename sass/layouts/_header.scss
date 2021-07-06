@@ -11,9 +11,15 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    align-items: center;
     transform: translate(-245px, 0);
 
+    @include respond(tab-land) {
+      transform: translate(-220px, 0);
+    }
+    @include respond(tab-port) {
+      transform: translate(-200px, 0);
+    }
     @include respond(phone) {
       transform: translate(-120px, 0);
     }

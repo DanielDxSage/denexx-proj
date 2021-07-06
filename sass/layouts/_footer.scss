@@ -4,10 +4,10 @@
   
 
   &__wrap{
-    margin: 5rem 8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 3rem;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
   }
 }
 
@@ -16,13 +16,15 @@
   font-weight: 500;
   color: $color-sub;
   display: flex;
-  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+
+  &__span {
+    font-size: 2.8rem;
+    margin: 1.1rem .5rem 0 0;
+  }
 
   span {
     color: $color-sub-1;
-  }
-
-  @include respond(phone) {
-    align-self: flex-end;
   }
 }
