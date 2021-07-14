@@ -20,8 +20,8 @@
 
 
   @include respond(mobile-l) {
-    top: 45rem;
-    left: 13rem;
+    top: 33rem;
+    left: 18rem;
   }
 
   &--main {
@@ -66,6 +66,8 @@
     // animation: moveInRight 2s ease-out;
 
     @include respond(phone) {
+      height: 35px;
+      line-height: 36px;
       letter-spacing: .5rem;
     }
 

@@ -21,7 +21,7 @@
     @media (max-width: 37.5em) {
       .header .social {
         transform: translate(-120px, 0);
-        margin-top: 41rem; } }
+        margin-top: 39rem; } }
     .header .social__a {
       color: #FFA500;
       background-color: rgba(128, 128, 128, 0.5);
@@ -84,7 +84,7 @@
     @media (max-width: 26.5em) {
       .header__text-box {
         top: 58%;
-        left: 48%; } }
+        left: 49%; } }
 
 .custom-shape-divider-bottom-1619476759 {
   position: absolute;
@@ -364,8 +364,8 @@ body {
   align-items: center; }
   @media (max-width: 26.5em) {
     .heading-primary {
-      top: 45rem;
-      left: 13rem; } }
+      top: 33rem;
+      left: 18rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
@@ -393,6 +393,8 @@ body {
     overflow: hidden; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
+        height: 35px;
+        line-height: 36px;
         letter-spacing: .5rem; } }
     .heading-primary--sub-li {
       position: relative;
