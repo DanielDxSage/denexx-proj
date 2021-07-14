@@ -2,7 +2,7 @@
   position: absolute;
   top: 12rem;
   left: 5rem;
-  color: $color-sub;
+  color: #464444;
   text-transform: uppercase;
 
   // backface-visibility: hidden;
@@ -20,13 +20,13 @@
 
 
   @include respond(mobile-l) {
-    top: 28rem;
-    left: 12rem;
+    top: 25rem;
+    left: 11rem;
   }
 
   &--main {
     display: block;
-    font-size: 4rem;
+    font-size: 5.5rem;
     font-weight: 500;
     letter-spacing: 2rem;
     padding: 4rem;
@@ -151,9 +151,10 @@
   margin-bottom: 3rem;
   color: $color-main;
 
-  // &:not(:last-child) {
-  //   margin-bottom: 3rem;
-  // }
+  @include respond(mobile-l) {
+    font-size: 2rem;
+    font-weight: 300;
+  }
 }
 
 .heading-tertiary {
