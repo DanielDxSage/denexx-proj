@@ -59,7 +59,7 @@
     width: 100%;
     height: 85%;
     position: absolute;
-    left: 20%;
+    left: 30%;
     bottom: 7%; }
     @media (max-width: 56.25em) {
       .header svg {
@@ -77,16 +77,20 @@
         bottom: 5; } }
   .header__text-box {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 70%;
+    left: 35%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 26.5em) {
+      .header__text-box {
+        top: 58%;
+        left: 48%; } }
 
 .custom-shape-divider-bottom-1619476759 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 125%;
+  width: 150%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg); }
@@ -301,6 +305,15 @@ body {
       .container__2 {
         grid-template-rows: 35vh min-content min-content; } }
 
+@keyframes type {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px; } }
+
+@keyframes slide {
+  100% {
+    top: -105px; } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -342,22 +355,23 @@ body {
   margin-bottom: 1.5rem !important; }
 
 .heading-primary {
+  position: absolute;
+  top: 12rem;
+  left: 5rem;
   color: #808080;
   text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  display: flex;
+  align-items: center; }
   @media (max-width: 26.5em) {
     .heading-primary {
-      margin-bottom: 16rem; } }
+      top: 45rem;
+      left: 13rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
     font-weight: 500;
-    letter-spacing: 3rem;
+    letter-spacing: 2rem;
     padding: 4rem;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
     /*animation-delay: 3s;
     */ }
     @media (max-width: 37.5em) {
@@ -367,13 +381,31 @@ body {
         font-weight: 500; } }
   .heading-primary--sub {
     display: block;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 500;
     letter-spacing: 1.75rem;
-    animation: moveInRight 2s ease-out; }
+    height: 37px;
+    line-height: 37px;
+    color: #FFA500;
+    list-style: none;
+    margin-top: -.4rem;
+    margin-left: -4rem;
+    overflow: hidden; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
+    .heading-primary--sub-li {
+      position: relative;
+      top: 0;
+      animation: slide 6s steps(3) infinite; }
+    .heading-primary--sub-s {
+      position: relative; }
+    .heading-primary--sub-s::after {
+      content: "";
+      position: absolute;
+      height: 125%;
+      left: 0;
+      width: 100%; }
 
 .heading-2, .heading-3 {
   font-family: "Yanone Kaffeesatz", sans-serif;

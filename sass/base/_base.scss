@@ -60,4 +60,8 @@ body {
       grid-template-rows: 35vh min-content min-content;
     }
   }
+
+  // @include respond(mobile-l) {
+  //   overflow: hidden;
+  // }
 }

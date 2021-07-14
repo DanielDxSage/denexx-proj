@@ -77,9 +77,10 @@
     width: 100%;
     height: 85%;
     position: absolute;
-    left: 20%;
+    left: 30%;
     // top: 10%;
     bottom: 7%;
+    
     
     @include respond(tab-port) {
       width: 90%;
@@ -101,10 +102,15 @@
 
   &__text-box {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 70%;
+    left: 35%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @include respond(mobile-l) {
+      top: 58%;
+      left: 48%;
+    }
   }
 }
 
@@ -112,7 +118,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 125%;
+  width: 150%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
