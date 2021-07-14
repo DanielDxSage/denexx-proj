@@ -364,8 +364,8 @@ body {
   align-items: center; }
   @media (max-width: 26.5em) {
     .heading-primary {
-      top: 31rem;
-      left: 17rem; } }
+      top: 28rem;
+      left: 12rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
