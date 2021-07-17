@@ -8,7 +8,7 @@
   }
 
   &__wrap {
-    margin: 10rem 0 12rem;
+    margin: 10rem 12rem 12rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,8 @@
       }
 
       &-sub {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        font-weight: 400;
         color: $color-main;
 
         @include respond(mobile-l) {

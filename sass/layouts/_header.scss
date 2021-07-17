@@ -73,7 +73,7 @@
     height: 3rem;
   }
 
-  svg {
+  &__svg {
     width: 100%;
     height: 85%;
     position: absolute;
@@ -98,6 +98,20 @@
       left: 3%;
       bottom: 5;
     }
+
+    @include respond(mobile-l) {
+      width: 76%;
+      height: 80%;
+      left: 28rem;
+      top: 11rem;
+    }
+
+    @include respond(mobile-m) {
+      width: 76%;
+      height: 80%;
+      left: 26rem;
+      top: 11rem;
+    }
   }
 
   &__text-box {
@@ -108,8 +122,12 @@
     text-align: center;
 
     @include respond(mobile-l) {
-      top: 58%;
-      left: 49%;
+      top: 64%;
+      left: 28%;
+    }
+    @include respond(mobile-m) {
+      top: 64%;
+      left: 31%;
     }
   }
 }
