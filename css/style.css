@@ -410,12 +410,12 @@ body {
       left: 10rem; } }
   @media (max-width: 26.5em) {
     .heading-primary {
-      top: 42rem;
-      left: 13rem; } }
+      top: 29rem;
+      left: 16rem; } }
   @media (max-width: 23.75em) {
     .heading-primary {
-      top: 42rem;
-      left: 11rem; } }
+      top: 29rem;
+      left: 13rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
@@ -446,9 +446,6 @@ body {
         height: 35px;
         line-height: 36px;
         letter-spacing: .5rem; } }
-    @media (max-width: 26.5em) {
-      .heading-primary--sub {
-        margin-left: 3rem; } }
     .heading-primary--sub-li {
       position: relative;
       top: 0;

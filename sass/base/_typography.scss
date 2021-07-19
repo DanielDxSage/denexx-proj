@@ -35,13 +35,13 @@
   }
 
   @include respond(mobile-l) {
-    top: 42rem;
-    left: 13rem;
+    top: 29rem;
+    left: 16rem;
   }
 
   @include respond(mobile-m) {
-    top: 42rem;
-    left: 11rem;
+    top: 29rem;
+    left: 13rem;
   }
 
   &--main {
@@ -89,10 +89,6 @@
       height: 35px;
       line-height: 36px;
       letter-spacing: .5rem;
-    }
-
-    @include respond(mobile-l) {
-      margin-left: 3rem;
     }
 
     &-li {
