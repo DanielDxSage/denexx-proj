@@ -16,9 +16,11 @@
     z-index: 100;
 
     @include respond(tab-land) {
+      margin-top: 42rem;
       transform: translate(-220px, 0);
     }
     @include respond(tab-port) {
+      margin-top: 42rem;
       transform: translate(-200px, 0);
     }
     @include respond(phone) {
@@ -82,6 +84,14 @@
     bottom: 7%;
     
     
+    @include respond(tab-land) {
+      width: 90%;
+      height: 90%;
+      position: absolute;
+      left: 5%;
+      bottom: 5;
+    }
+
     @include respond(tab-port) {
       width: 90%;
       height: 90%;
@@ -100,17 +110,15 @@
     }
 
     @include respond(mobile-l) {
-      width: 76%;
-      height: 80%;
-      left: 28rem;
-      top: 11rem;
+      width: 90%;
+      height: 90%;
+      left: 3rem;
     }
 
     @include respond(mobile-m) {
-      width: 76%;
-      height: 80%;
-      left: 26rem;
-      top: 11rem;
+      width: 90%;
+      height: 90%;
+      left: 3rem;
     }
   }
 
@@ -121,13 +129,24 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
+    @include respond(tab-land) {
+      top: 64%;
+      left: 51%;
+    }
+
+    @include respond(tab-port) {
+      top: 64%;
+      left: 49%;
+    }
+
     @include respond(mobile-l) {
       top: 64%;
-      left: 28%;
+      left: 49%;
     }
+
     @include respond(mobile-m) {
-      top: 64%;
-      left: 31%;
+      top: 63%;
+      left: 50%;
     }
   }
 }

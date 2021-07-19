@@ -52,6 +52,10 @@ body {
       grid-template-rows: 53vh min-content min-content;
     }
 
+    @include respond(ipad-pro) {
+      grid-template-rows: 50vh min-content min-content;
+    }
+
     @include respond(tab-port) {
       grid-template-rows: 50vh min-content min-content;
     }

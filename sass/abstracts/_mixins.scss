@@ -16,6 +16,10 @@
     @media (max-width: 56.25em) { @content };  //900px
   }
 
+  @if $breakpoint == ipad-pro {
+    @media (max-width: 64em) { @content };  //1024px
+  }
+
   @if $breakpoint == tab-land {
     @media (max-width: 75em) { @content };  //1200px
   }

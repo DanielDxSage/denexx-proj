@@ -19,10 +19,29 @@
   // margin-left: -20rem;
 
 
+  @include respond(tab-land) {
+    top: 20rem;
+    left: 25rem;
+  }
+
+  @include respond(ipad-pro) {
+    top: 20rem;
+    left: 20rem;
+  }
+
+  @include respond(tab-port) {
+    top: 25rem;
+    left: 10rem;
+  }
+
   @include respond(mobile-l) {
     top: 42rem;
-    left: 6rem;
-    flex-direction: column;
+    left: 13rem;
+  }
+
+  @include respond(mobile-m) {
+    top: 42rem;
+    left: 11rem;
   }
 
   &--main {
